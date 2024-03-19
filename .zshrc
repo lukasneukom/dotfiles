@@ -8,6 +8,7 @@ setopt nocaseglob
 
 # ALIASES
 alias config='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias notes='/opt/homebrew/bin/git --git-dir=$HOME/.notes --work-tree=$HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Vault'
 alias ll='ls -Flah'  # --classify --all --human-readable
 alias man=xman
 
