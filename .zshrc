@@ -4,6 +4,7 @@ export CLICOLOR=1
 export EDITOR=vim
 
 # ZSH OPTIONS
+setopt autocd
 setopt nocaseglob
 
 # ALIASES
