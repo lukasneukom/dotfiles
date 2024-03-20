@@ -16,3 +16,7 @@ alias man=xman
 function xman {
     open x-man-page://$1
 }
+
+# COMPLETION
+autoload -Uz compinit
+compinit
