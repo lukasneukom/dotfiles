@@ -10,6 +10,18 @@ set number
 " Always display status bar
 set laststatus=2
 
+" Move across newlines with arrow keys
+set whichwrap+=<,>,[,]
+
+" Highlight search matches
+set hlsearch
+
+" Search incrementally
+set incsearch
+
+" Command completion
+set wildmenu
+
 " Save all temporary files in ~/.vim
 set directory=$HOME/.vim/swap//
 set backupdir=$HOME/.vim/backup//
