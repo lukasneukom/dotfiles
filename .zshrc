@@ -7,6 +7,18 @@ export EDITOR=vim
 setopt autocd
 setopt nocaseglob
 
+# HISTORY
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=20000 # lines remembered per session
+SAVEHIST=20000 # lines stored in history file
+
+setopt share_history # share history across sessions
+setopt hist_expire_dups_first # expire duplicates first
+setopt hist_ignore_dups # do not store duplicates
+setopt hist_find_no_dups # ignore duplicates when searching
+setopt hist_reduce_blanks # remove blank lines from history
+setopt hist_ignore_space # ignore lines starting with a space
+
 # ALIASES
 alias config='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias notes='/opt/homebrew/bin/git --git-dir=$HOME/.notes --work-tree=$HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Vault'
