@@ -9,6 +9,7 @@ set number
 
 " Always display status bar
 set laststatus=2
+set ruler
 
 " Move across newlines with arrow keys
 set whichwrap+=<,>,[,]
