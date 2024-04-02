@@ -1,5 +1,6 @@
 # ENVIRONMENT
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/Users/lukasneukom/Scripts/Shell:$PATH"
 export CLICOLOR=1
 export EDITOR=vim
 
