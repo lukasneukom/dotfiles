@@ -34,3 +34,13 @@ function xman {
 # COMPLETION
 autoload -Uz compinit
 compinit
+
+# PROMPT
+preprompt() {
+  print
+  print -rP "%F{blue}%~%f"
+}
+
+add-zsh-hook precmd preprompt
+
+export PS1="❯ "
