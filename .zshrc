@@ -38,9 +38,9 @@ compinit
 # PROMPT
 preprompt() {
   print
-  print -rP "%F{blue}%~%f"
+  print -rP "%B%F{blue}%~%f%b"
 }
 
 add-zsh-hook precmd preprompt
 
-export PS1="❯ "
+export PS1="%(?.%F{green}❯%f .%F{red}❯%f "
