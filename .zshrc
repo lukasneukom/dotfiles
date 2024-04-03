@@ -43,4 +43,4 @@ preprompt() {
 
 add-zsh-hook precmd preprompt
 
-export PS1="%(?.%F{green}❯%f .%F{red}❯%f "
+export PS1="%(?.%F{green}❯%f .%F{red}Error %? ❯%f "
