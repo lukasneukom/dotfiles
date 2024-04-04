@@ -43,7 +43,14 @@ preprompt() {
   elif [ "$NEWLINE_BEFORE_PROMPT" -eq 1 ]; then
     print
   fi
-  print -rP "%B%F{blue}%~%f%b"
+
+  if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then
+    GITING_IT=" Git"
+  else
+    GITING_IT=""
+  fi
+
+  print -rP "%B%F{blue}%~%f%b" "$GITING_IT"
 }
 
 add-zsh-hook precmd preprompt
