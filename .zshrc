@@ -25,6 +25,7 @@ alias config='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias notes='/opt/homebrew/bin/git --git-dir=$HOME/.notes --work-tree=$HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Vault'
 alias ll='ls -Flah'  # --classify --all --human-readable
 alias man=xman
+alias clear="unset NEWLINE_BEFORE_PROMPT && clear"
 
 # FUNCTIONS
 function xman {
@@ -37,7 +38,11 @@ compinit
 
 # PROMPT
 preprompt() {
-  print
+  if [ -z "$NEWLINE_BEFORE_PROMPT" ]; then
+    NEWLINE_BEFORE_PROMPT=1
+  elif [ "$NEWLINE_BEFORE_PROMPT" -eq 1 ]; then
+    print
+  fi
   print -rP "%B%F{blue}%~%f%b"
 }
 
