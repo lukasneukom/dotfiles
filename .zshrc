@@ -37,6 +37,11 @@ autoload -Uz compinit
 compinit
 
 # PROMPT
+source /opt/homebrew/Cellar/git/2.44.0/etc/bash_completion.d/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_DESCRIBE_STYLE="branch"
+GIT_PS1_SHOWUPSTREAM="verbose"
+
 preprompt() {
   if [ -z "$NEWLINE_BEFORE_PROMPT" ]; then
     NEWLINE_BEFORE_PROMPT=1
@@ -50,7 +55,7 @@ preprompt() {
     GITING_IT=""
   fi
 
-  print -rP "%B%F{blue}%~%f%b" "$GITING_IT"
+  print -rP "%B%F{blue}%~%f%b" $(__git_ps1 "(%s)")
 }
 
 add-zsh-hook precmd preprompt
