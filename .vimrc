@@ -27,3 +27,9 @@ set wildmenu
 set directory=$HOME/.vim/swap//
 set backupdir=$HOME/.vim/backup//
 set undodir=$HOME/.vim/undo//
+
+" Format Git commit messages
+set textwidth=80
+set colorcolumn=+1
+autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit set colorcolumn+=51
