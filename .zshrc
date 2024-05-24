@@ -37,7 +37,7 @@ autoload -Uz compinit
 compinit
 
 # PROMPT
-source /opt/homebrew/Cellar/git/2.45.0/etc/bash_completion.d/git-prompt.sh
+source /opt/homebrew/Cellar/git/2.45.1/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWUPSTREAM="verbose"
