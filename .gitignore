@@ -3,3 +3,7 @@
 
 # Obsidian
 .obsidian
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace
