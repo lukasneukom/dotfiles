@@ -4,6 +4,9 @@
 # Obsidian
 .obsidian
 
+# Nova
+.nova/
+
 # Swift Playgrounds
 timeline.xctimeline
 playground.xcworkspace
