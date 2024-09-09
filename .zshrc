@@ -32,6 +32,12 @@ function xman {
     open x-man-page://$1
 }
 
+function serve {
+    local dir=${1:-.}
+    local port=${2:-8000}
+    (cd "$dir" &&echo "Navigate to http://localhost:$port in your web browser" && python3 -m http.server "$port" > /dev/null 2>&1)
+}
+
 # COMPLETION
 autoload -Uz compinit
 compinit
