@@ -22,11 +22,8 @@ setopt hist_ignore_space # ignore lines starting with a space
 
 # ALIASES
 alias config='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-alias notes='/opt/homebrew/bin/git --git-dir=$HOME/.notes
---work-tree=$HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Notes'
-alias vault='/opt/homebrew/bin/git --git-dir=$HOME/.vault
---work-tree=$HOME/Library/Mobile\
-Documents/iCloud\~md\~obsidian/Documents/Vault' 
+alias notes='/opt/homebrew/bin/git --git-dir=$HOME/.notes --work-tree=$HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Notes'
+alias vault='/opt/homebrew/bin/git --git-dir=$HOME/.vault --work-tree=$HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Vault' 
 alias ll='ls -Flah'  # --classify --all --human-readable
 alias man=xman
 alias clear="unset NEWLINE_BEFORE_PROMPT && clear"
