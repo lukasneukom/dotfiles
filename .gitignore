@@ -1,9 +1,6 @@
 # General
 .DS_Store
 
-# Obsidian
-.obsidian
-
 # Nova
 .nova/
 
